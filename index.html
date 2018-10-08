@@ -10,8 +10,19 @@
     <link rel="stylesheet" href="css/styles-merged.css">
     <link rel="stylesheet" href="css/style.min.css">
     <link rel="stylesheet" href="css/custom.css">
+    <style type="text/css">
+      .preload {
+        width: 100%;
+        height: 100%;
+        background: url('img/preloader.gif') center no-repeat #fff;
+        z-index: 99999;
+        position: fixed;
+    }
+    </style>
   </head>
   <body>
+  <div class="preload"></div>
+   <div class="main">
     <div class="probootstrap-page-wrapper">      
       <nav class="navbar navbar-default probootstrap-navbar">
         <div class="container">
@@ -612,12 +623,22 @@
           </div>
           
         </div>
+        </footer>
+        </div>
+        </div>
 
     
 
     <script src="js/scripts.min.js"></script>
     <script src="js/main.min.js"></script>
     <script src="js/custom.js"></script>
+    <script>
+        setTimeout(function(){        
+    $('.preload').fadeOut();
+    $('.main').delay(150); 
+    document.body.style.backgroundColor = "#EFF0F4";
+    },2000);
+    </script>
 
   </body>
 </html>
