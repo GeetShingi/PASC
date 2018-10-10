@@ -451,12 +451,10 @@ a:hover, a:focus, a:active {
   padding-bottom: 0 !important;
   font-size: 30px;
   text-transform: uppercase;
-  background: url(../img/logo.png) no-repeat left 100%;
   top: 24px;
   position: relative;
   width: 160px;
   height: 43px;
-  text-indent: -999999px;
   -webkit-transition: .2s all;
   transition: .2s all;
 }
@@ -479,7 +477,6 @@ a:hover, a:focus, a:active {
     position: relative;
     width: 160px;
     height: 43px;
-    background: url(../img/logo@2x.png) no-repeat left 100%;
     background-size: cover;
   }
 }
@@ -609,8 +606,8 @@ a:hover, a:focus, a:active {
 }
 
 .probootstrap-navbar.scrolled .parent-nav-link-padding, .probootstrap-navbar.scrolled .navbar-brand, .probootstrap-navbar.scrolled .navbar-nav > li > a {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .probootstrap-navbar.scrolled .navbar-brand {
@@ -3097,4 +3094,7 @@ a:hover, a:focus, a:active {
     float: none;
     width: 100%;
   }
+}
+.shift:hover{
+  margin-top: -5px;
 }
